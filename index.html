@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>photogallery website| Photo collections of MUNNAR</title>
+    <meta
+      name="description"
+      content="The photos about the beauty of munnar-The kashmir of south india"
+    />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,flow" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--header section-->
+    <section class="header">
+      <!--navigation list-->
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="./index.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="./public/about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="./public/contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>EXPLORE MUNNAR</h1>
+        <p>
+          Welcome to this site which is going to get you to the photo
+          collections of <br />
+          <i><b>KASHMIR OF SOUTH INDIA!</b></i>
+        </p>
+        <a href="./public/explore.html" class="hero-btn">explore!</a>
+      </div>
+    </section>
+    <div id="preloader"></div>
+
+    <!--javascript for  toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

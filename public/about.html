@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>photogallery website| Photo collections of MUNNAR</title>
+    <meta
+      name="description"
+      content="The photos about the beauty of munnar-The kashmir of south india"
+    />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,flow" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--header section-->
+    <section class="sub-header">
+      <!--navigation list-->
+      <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="../index.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="../public/about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="../public/contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Me</h1>
+    </section>
+    <!--Footer section-->
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>
+        Hi, it’s nice to meet you! My goal is to show the beauty and grace of
+        South India's Kashmir Everything and anything here will make us excited.
+        <br />I have created this page inorder to show the beauty of munnar.
+        <br />get in touch with me <br /><a
+          href="https://www.instagram.com/jashua_ravi/"
+          target="_blank"
+        >
+          <i class="fa fa-instagram"> </i>
+        </a>
+      </p>
+
+      <p>Made with <i class="fa fa-heart-o"> </i> by Bharath</p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
